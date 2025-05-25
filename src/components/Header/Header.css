@@ -4,8 +4,15 @@
   padding: 32px 0 28px;
 }
 
+.header__link {
+  display: flex;
+  gap: 12px;
+  align-items: anchor-center;
+  text-decoration: none;
+  color: #000;
+}
+
 .header__add-clothes-btn {
-  margin: 0 20px 0 auto;
   border: none;
   background-color: transparent;
   border: none;
@@ -16,6 +23,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-left: auto;
 }
 
 .header__date-and-location {
@@ -30,6 +38,7 @@
 
 .header__logo {
   margin-right: 24px;
+  width: 50px;
 }
 
 .header__hamburger {
@@ -56,6 +65,21 @@
 .menu__list {
   visibility: hidden;
   display: none;
+}
+
+.header__dark-mode {
+  border: none;
+  background-color: #000;
+  border-radius: 12px;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header__dark-mode:hover {
+  background-color: rgb(44, 44, 44);
 }
 
 @media screen and (max-width: 768px) {
@@ -116,12 +140,18 @@
     display: block;
     visibility: visible;
     top: 10px;
-    left: 87%;
+    left: 92%;
+    padding: 0;
+  }
+
+  .menu__close-icon {
+    width: 16px;
   }
 
   .header__mobile-menu.header__mobile-menu_opened {
     margin: 10px;
     width: calc(100% - 20px);
+    z-index: 4;
   }
 
   .header__mobile-menu {
@@ -138,7 +168,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+
     border-radius: 12px;
     border-start-end-radius: 12px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);

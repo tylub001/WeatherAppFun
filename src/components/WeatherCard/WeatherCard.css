@@ -5,6 +5,13 @@
    overflow: hidden;
    display: flex;
 }
+
+.hidden {
+   visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .weather-card__temp {
     font-size: 36px;
     line-height: 40px;
@@ -23,5 +30,10 @@
 }
 
 @media screen and (max-width: 768px) {
-   
+   .weather-card {
+   height: 104px}
+
+   .header {
+    margin-bottom: 24px;
+   }
 }
