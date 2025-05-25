@@ -1,0 +1,96 @@
+.modal__content.modal__content_type_image {
+  display: block;
+  padding: 0;
+  width: 498px;
+  border-radius: 20px;
+}
+
+.modal__image {
+  width: 100%;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+}
+
+.modal__close.modal__close_type_card {
+  background-image: url("../../assets/modalclosebtnwhite.svg");
+}
+
+.modal__footer {
+  margin: 0;
+  padding-left: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__caption {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.modal__weather {
+  margin: 0;
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.modal__delete-btn {
+  display: flex;
+  margin: 20px 32px;
+  padding: 0;
+  justify-self: end;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ff4d00;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__image {
+    border-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .modal.modal__content_type_image {
+    align-items: center;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .modal__content.modal__content_type_image {
+    border-radius: 12px;
+    max-width: 343px;
+    align-self: center;
+  }
+
+  .modal__weather {
+    margin-bottom: 20px;
+  }
+
+  .modal__footer {
+    padding-left: 20px;
+  }
+
+  .modal__caption {
+    padding-bottom: 12px;
+  }
+
+  .modal__close.modal__close_type_card {
+    background-image: url("../../assets/closeDark.svg");
+    top: 16px;
+    right: 16px;
+  }
+
+  .modal__delete-btn {
+    margin: 20px 20px;
+  }
+
+  .modal__weather {
+    padding-left: 20px;
+  }
+}
